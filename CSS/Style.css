@@ -19,11 +19,22 @@ footer {
     background-color: #6F8298;
 }
 
-.row {
-  margin: 10px -16px;
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Add padding BETWEEN each column */
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
   padding: 8px;
@@ -33,10 +44,10 @@ footer {
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide all elements by default */
+  display: none; /* Hide columns by default */
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -63,13 +74,15 @@ footer {
   cursor: pointer;
 }
 
+/* Add a grey background color on mouse-over */
 .btn:hover {
   background-color: #ddd;
 }
 
-.btn.actived {
+/* Add a dark background color to the active button */
+.btn.active {
   background-color: #666;
-  color: white;
+   color: white;
 }
 
 .collapsibled {
