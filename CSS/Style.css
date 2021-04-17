@@ -84,26 +84,3 @@ h1 {
   background-color: #666;
    color: white;
 }
-
-.collapsibled {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.activd, .collapsibled:hover {
-  background-color: #555;
-}
-
-.contentd {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
