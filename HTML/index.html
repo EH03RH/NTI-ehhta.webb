@@ -7,15 +7,50 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://EH03RH.github.io/css/Style.css">
+   <style>
+   .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+   </style>
 <body>
 
 <!-- Navigation (Stays on Top) -->
 <div class="w3-top w3-bar w3-black" position="fixed">
-<a href="test.html" class="w3-bar-item w3-button" style="background-color: #1156A6;">Home</a>
-<a href="" class="w3-bar-item w3-button">About</a>
+<a href="index.html" class="w3-bar-item w3-button" style="background-color: #1156A6;">Home</a>
+<a href="about.html" class="w3-bar-item w3-button">About</a>
 <a href="models.html" class="w3-bar-item w3-button">Models</a>
 <a href="https://www.icao.int/Meetings/FutureOfAviation/Pages/default.aspx" class="w3-bar-item w3-button">ICAO</a>
 </div>
@@ -24,16 +59,16 @@
 <div class="w3-content">
 
 <!-- Slides -->
-<img class="slides" src="../Images/landingpage-stage-A320neo-1.jpg" width="100%">
-<img class="slides" src="../Images/landingpage-stage-A320neo-2.jpg" width="100%">
-<img class="slides" src="../Images/landingpage-stage-A321LR.jpg" width="100%">
+<img class="slides" src="landingpage-stage-A320neo-1.jpg" width="100%">
+<img class="slides" src="landingpage-stage-A320neo-2.jpg" width="100%">
+<img class="slides" src="landingpage-stage-A321LR.jpg" width="100%">
 <script>
 w3.slideshow(".slides", 1500);
 </script>
 <div STYLE="background-color:#506685; height:5px; width:100%;"></div>
 <!-- About -->
 <div class="w3-container w3-padding-32">
-<h1 class="w3-center">Airbus</h1>
+<h1 class="w3-center">AIRBUS</h1>
 <p>The company's main civil aeroplane business is conducted through the French company Airbus S.A.S., based in Blagnac, a suburb of Toulouse, with production and manufacturing facilities mostly in Europe.
 <br>
 <br>
@@ -43,21 +78,21 @@ At Airbus, we believe that it’s not just what we make, but how we make it that
 
 <!-- Members -->
 <div class="w3-container w3-padding-32">
-<h2 class="w3-center">Most popular models</h2>
+<h2 class="w3-center">MOST POPULAR MODELS</h2>
 <div class="w3-row w3-center">
 
 <div class="w3-third">
-<a href=""><img src="../Images/bild1.jpg" alt="A350" width="60%"></a>
+<a href=""><img src="../Images/bild1.jpg" alt="A350" class="hv" width="60%"></a>
 <p>A350</p>
 </div>
 
 <div class="w3-third">
-<a href=""><img src="../Images/h160.jpg" alt="H160" width="66%"></a>
+<a href=""><img src="../Images/h160.jpg" alt="H160" class="hv" width="66%"></a>
 <p>H160</p>
 </div>
 
 <div class="w3-third">
-<a href=""><img src="../Images/eurofighter.JPG" alt="Eurofighter" width="80%"></a>
+<a href=""><img src="../Images/eurofighter.JPG" alt="Eurofighter" class="hv" width="80%"></a>
 <p>Eurofighter</p>
 </div>
 </div>
@@ -65,8 +100,53 @@ At Airbus, we believe that it’s not just what we make, but how we make it that
 
 
 <div class="w3-container w3-padding-32">
-<h2 class="w3-center">Latest news from Airbus</h2>
+<h2 class="w3-center">LATEST NEWS FROM AIRBUS</h2>
 <div class="w3-row w3-center">
+<button class="collapsible">Tripset: the companion app that helps air travellers navigate during COVID</button>
+<div class="content">
+  <br>
+<img src="../Images/tripset-header.jfif" width="100%" height="auto"></img>
+<br>
+<br>
+<p>
+This mobile app gives the flying public real-time information for safe, healthy and smooth end-to-end journeys.
+
+Air travel has become ever more challenging for passengers. Due to the COVID-19 pandemic, any attempt to reconnect to air-travel is countered by a myriad of varied – and often rapidly-changing – restrictions, making planning for any potential air-traveller difficult.
+
+To help simplify the situation, Airbus developed the Tripset application as its contribution to rebuilding clarity and trust when travelling. The app provides the latest and most relevant up-to-date information covering all aspects of flight, from planning, booking, check-in to conditions while onboard and at the destination.
+
+This new digital experience is based on the award-winning iflyA380 travel app, with everything at the user's fingertips in a single application that is updated twice daily.</p>
+
+<h3>Hassle-free access to the latest travel information</h3>
+
+<p>The Tripset app aggregates information from multiple sources, including guidelines from government websites and embassies on in-country conditions, region-by-region restrictions or requirements, along with health measures implemented by airlines and airports.
+Another important feature is the border status of destinations around the globe: whether they are open, restricted or closed. Also included are suggestions for ground transportation at the points of departure and arrival, such as commuting options to and from airports.
+All this information is provided in an agnostic manner; no matter the airport, airline, flight number or aircraft type…the app will take into account the full range of available inputs.
+</p>
+
+<h3>How to fly again soon</h3>
+
+<p>Once a flight is booked, the passenger can import the trip specifics into Tripset, which then builds a personal timeline using all available data on the end-to-end travel conditions.
+The app continues to provide information – even prompting the passenger when it is time to go to the gate, based on information from the boarding pass.
+To benefit from this latest example of Airbus innovation in action – and to get back in the sky with confidence – download the free-of-charge Tripset app for Android and iOS devices from Google Play and the AppStore.</p>
+<br>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </div>
 </div>
 
@@ -77,7 +157,7 @@ At Airbus, we believe that it’s not just what we make, but how we make it that
 <h2 class="w3-wide">CONTACT</h2>
 <a href="https://www.ntigymnasiet.se/nti-in-english/">NTI Upper Secondary Schools of Technology</a><br>
 Adress: Trädgårdsgatan 22A 972 38 Luleå<br>
-Email: ehhta.readythoo@elev.ga.ntig.com<br>
+Email: Ehhta.readythoo@elev.ga.ntig.com<br>
 <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
 
 <form action="/action_page.php" target="_blank">
@@ -95,12 +175,12 @@ Email: ehhta.readythoo@elev.ga.ntig.com<br>
 <!-- End Content -->
 </div>
 <div class="w3-container w3-center w3-padding-32">
-  <footer>
+ <footer>
   <br>
   <img src="../Images/github_logo.png" class="w3-image" style="width:5%">
 <p class="w3-center w3-padding">Powered by <a href="https://github.com/EH03RH/NTI-ehhta.webb" title="W3.CSS" target="_blank">GitHub</a></p>
-  <p>Webbsite made for webb development 1</p>
-		&copy; 2021 Eh Hta Ready Htoo
+  <p style="margin-bottom:1cm;">Webbsite made for webb development 1 <br> &copy; 2021 Eh Hta Ready Htoo</p>
+		<br>
 	</footer>
 </div>
 
