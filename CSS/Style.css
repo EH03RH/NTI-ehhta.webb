@@ -6,11 +6,7 @@
   /* The width is the width of the web page */
 }
 
-.activ {
-  background-color: #1156A6;
-}
-
-a:hover {
+.hv:hover {
   opacity: 0.3;
 }
 
